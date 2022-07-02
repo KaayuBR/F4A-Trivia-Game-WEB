@@ -3,19 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JavaScript</title>
-
+    <title>Adicionar pergunta</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="javascript/index.js"></script>
 </head>
 
 <body>
-    <h1>Curso de JavaScript</h1>
-    <input type="text" 
-    placeholder="Teste de precedência" 
-    id="nome" 
-    disabled="disabled"
-    >
-    
-    <script src="JS/meu_script.js"></script>
+    <h2>Formulário para cadastrar perguntas</h2>
+    <form>
+
+        Selecione a categoria da pergunta<br>
+        <select name = "categoria" id="categoria">
+            <option value = "anime">Animes</option>
+            <option value = "games">Games</option>
+            <option value = "pop">Cultura Pop</option>
+        </select>
+        <br><br>
+
+        Selecione a dificuldade desta pergunta<br>
+        <select name = "dificuldade" id="dificuldade">
+            <option value = "facil">Fácil</option>
+            <option value = "medio">Médio</option>
+            <option value = "dificil">Difícil</option>
+            <option value = "impossivel">Impossível</option>
+        </select>
+        <br><br>
+
+        Selecione o tipo da pergunta<br>
+        <input type="radio" name="tipo" id="tipo" value="multipla escolha">Multipla escolha<br>
+        <input type="radio" name="tipo" id="tipo" value="encontre a palavra">Encontre a palavra<br>
+        <br><br>
+
+        Escreva o enunciado da pergunta<br>
+        <textarea id="enunciado" name="enunciado">Escreva a pergunta aqui</textarea>
+        <br><br>
+
+        Alternativas:<br>
+        <label for="alternativaA">Alternativa A:</label>
+        <input type="text" name = "alternativaA" id="alternativaA"><br><br>
+        <label for="alternativaB">Alternativa B:</label>
+        <input type="text" name = "alternativaB" id="alternativaB"><br><br>
+        <label for="alternativaC">Alternativa C:</label>
+        <input type="text" name = "alternativaC" id="alternativaC"><br><br>
+        <label for="alternativaD">Alternativa D:</label>
+        <input type="text" name = "alternativaD" id="alternativaD"><br><br>
+        <br><br>
+
+        Escreva a resposta correta<br>
+        <label for="resposta">Resposta:</label>
+        <input type="text" name = "resposta" id="resposta"><br><br>
+        <br><br>
+
+        <label for="enviar">Enviar dados:</label>
+        <input type="submit" name = "enviar" id="enviar"><br><br>
+
+    </form>
+ 
 </body>
 
 </html>
