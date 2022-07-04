@@ -31,6 +31,18 @@ textarea {
 	resize: both;
   }
 
+  .button {
+	background-color: #1c0638;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 25%;
+  }
+
 
 
 

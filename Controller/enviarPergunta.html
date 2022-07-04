@@ -6,12 +6,12 @@
     <title>Adicionar pergunta</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="javascript/index.js"></script>
+    <script src="javascript/EnviarPergunta.js"></script>
 </head>
 
 <body>
     <h2>Formulário para cadastrar perguntas</h2>
-    <form>
+    <form name="adicionar-perguntas" id = "adicionar-perguntas" action="">
 
         Selecione a categoria da pergunta<br>
         <select name = "categoria" id="categoria">
@@ -31,14 +31,14 @@
         <br><br>
 
         Selecione o tipo da pergunta<br>
-        <input type="radio" name="tipo" id="tipo" value="multipla escolha">Multipla escolha<br>
-        <input type="radio" name="tipo" id="tipo" value="encontre a palavra">Encontre a palavra<br>
+        <input onfocus="mostrar()" type="radio" name="tipo" id="mEscolha" value="multipla escolha" checked>Multipla escolha<br>
+        <input onfocus="esconder()" type="radio" name="tipo" id="ePalavra" value="encontre a palavra">Encontre a palavra<br>
         <br><br>
 
         Escreva o enunciado da pergunta<br>
-        <textarea id="enunciado" name="enunciado">Escreva a pergunta aqui</textarea>
+        <textarea id="enunciado" name="enunciado" required>Escreva a pergunta aqui</textarea>
         <br><br>
-
+        <div id="alternativas">
         Alternativas:<br>
         <label for="alternativaA">Alternativa A:</label>
         <input type="text" name = "alternativaA" id="alternativaA"><br><br>
@@ -48,15 +48,15 @@
         <input type="text" name = "alternativaC" id="alternativaC"><br><br>
         <label for="alternativaD">Alternativa D:</label>
         <input type="text" name = "alternativaD" id="alternativaD"><br><br>
-        <br><br>
+        <br><br></div>
 
         Escreva a resposta correta<br>
         <label for="resposta">Resposta:</label>
-        <input type="text" name = "resposta" id="resposta"><br><br>
+        <input type="text" name = "resposta" id="resposta" placeholder="Digite a resposta aqui" required><br><br>
         <br><br>
 
         <label for="enviar">Enviar dados:</label>
-        <input type="submit" name = "enviar" id="enviar"><br><br>
+        <input onclick="postar()" type="submit" name = "enviar" id="enviar" value="enviar"><br><br>
 
     </form>
  
