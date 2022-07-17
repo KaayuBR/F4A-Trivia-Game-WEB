@@ -43,6 +43,36 @@ textarea {
 	width: 25%;
   }
 
+  .espacador{
+	color: #ffffff;
+}
+
+#menu {
+	background: #006699;
+	padding: 18px;
+}
+
+#consultado{
+	visibility: hidden;
+	text-align: center;
+}
+
+h1 {
+	color: #006699;
+	font-size: 1.2em;
+}
+
+hr{
+	color: #a6c0d9;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.75em;
+	padding: 5px;
+}
 
 
 

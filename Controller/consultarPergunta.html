@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Consultar pergunta</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="javascript/ConsultarPergunta.js"></script>
+</head>
+
+<body>
+    <h2>Consultar de pergunta</h2>
+    <form name="consultar-perguntas" id = "consultar-perguntas" action="">
+
+        Digite o id da pergunta<br>
+        
+        <br>
+        <label for="id">ID:</label>
+        <input type="text" name = "id" id="id" placeholder="Digite o ID aqui" required><br><br>
+        <br><br>
+
+        <label for="consulta">Consultar:</label>
+        <input onclick="consultar()" type="button" name = "consulta" id="consulta" value="consulta"><br><br>
+
+    </form>
+
+    <div id="consultado">
+
+    </div>
+
+    <div id="menu">
+				
+        <a href="index.html">Início</a> <span class="espacador">|</span> 
+        <a href="enviarPergunta.html">Adicionar pergunta</a> <span class="espacador">|</span>
+        <a href="consultarPergunta.html">Consultar pergunta</a> <span class="espacador">|</span> 
+        <a href="editarPergunta.html">Editar pergunta</a> <span class="espacador">|</span>
+        <a href="deletarPergunta.html">Deletar pergunta</a> <span class="espacador">|</span>
+
+    </div>
+ 
+</body>
+
+</html>
