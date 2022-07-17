@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Editar pergunta</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="javascript/EditarPergunta.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+				
+        <a href="index.html">Início</a> <span class="espacador">|</span> 
+        <a href="enviarPergunta.html">Adicionar pergunta</a> <span class="espacador">|</span>
+        <a href="consultarPergunta.html">Consultar pergunta</a> <span class="espacador">|</span> 
+        <a href="editarPergunta.html">Editar pergunta</a> <span class="espacador">|</span>
+        <a href="deletarPergunta.html">Deletar pergunta</a> <span class="espacador">|</span>
+
+    </div>
+
+    <h2>Consultar de pergunta</h2>
+    <form name="consultar-perguntas" id = "consultar-perguntase" action="">
+
+        Digite o id da pergunta a ser editada<br>
+        
+        <br>
+        <label for="id">ID:</label>
+        <input type="text" name = "id" id="ide" placeholder="Digite o ID aqui" required><br><br>
+
+        <label for="consulta">Consultar:</label>
+        <input onclick="consultar()" type="button" name = "consulta" id="consultae" value="consulta"><br><br>
+
+    </form>
+    <h2 id="nencontrado">Código não encontrado</h2>
+    <div id="editado">
+
+        <h2>Formulário para editar perguntas</h2>
+        <form name="adicionar-perguntas" id = "adicionar-perguntase" action="">
+    
+            Selecione a categoria da pergunta<br>
+            <select name = "categoria" id="categoriae">
+                <option value = "anime">Animes</option>
+                <option value = "games">Games</option>
+                <option value = "pop">Cultura Pop</option>
+            </select>
+            <br><br>
+    
+            Selecione a dificuldade desta pergunta<br>
+            <select name = "dificuldade" id="dificuldadee">
+                <option value = "facil">Fácil</option>
+                <option value = "medio">Médio</option>
+                <option value = "dificil">Difícil</option>
+                <option value = "impossivel">Impossível</option>
+            </select>
+            <br><br>
+    
+            Selecione o tipo da pergunta<br>
+            <input onfocus="mostrar()" type="radio" name="tipo" id="mEscolhae" value="multipla escolha" checked>Multipla escolha<br>
+            <input onfocus="esconder()" type="radio" name="tipo" id="ePalavrae" value="encontre a palavra">Encontre a palavra<br>
+            <br><br>
+    
+            Escreva o enunciado da pergunta<br>
+            <textarea id="enunciadoe" name="enunciado" required>Escreva a pergunta aqui</textarea>
+            <br><br>
+            <div id="alternativase">
+            Alternativas:<br>
+            <label for="alternativaA">Alternativa A:</label>
+            <input type="text" name = "alternativaA" id="alternativaAe"><br><br>
+            <label for="alternativaB">Alternativa B:</label>
+            <input type="text" name = "alternativaB" id="alternativaBe"><br><br>
+            <label for="alternativaC">Alternativa C:</label>
+            <input type="text" name = "alternativaC" id="alternativaCe"><br><br>
+            <label for="alternativaD">Alternativa D:</label>
+            <input type="text" name = "alternativaD" id="alternativaDe"><br><br>
+            <br><br></div>
+    
+            Escreva a resposta correta<br>
+            <label for="resposta">Resposta:</label>
+            <input type="text" name = "resposta" id="respostae" placeholder="Digite a resposta aqui" required><br><br>
+            <br><br>
+    
+            <label for="enviar">Salvar:</label>
+            <input onclick="editar()" type="submit" name = "enviar" id="enviare" value="enviar"><br><br>
+    
+        </form>
+
+    </div>
+
+ 
+</body>
+
+</html>

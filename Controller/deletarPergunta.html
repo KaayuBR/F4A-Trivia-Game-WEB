@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Consultar pergunta</title>
+    <title>Deletar pergunta</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="javascript/ConsultarPergunta.js"></script>
+    <script src="javascript/deletarPergunta.js"></script>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 
     </div>
 
-    <h2>Consultar de pergunta</h2>
-    <form name="consultar-perguntas" id = "consultar-perguntas" action="">
+    <h2>Deletar pergunta</h2>
+    <form name="deletar-perguntas" id = "deletar-perguntas" action="">
 
         Digite o id da pergunta<br>
         
@@ -30,14 +30,10 @@
         <input type="text" name = "id" id="id" placeholder="Digite o ID aqui" required><br><br>
         <br><br>
 
-        <label for="consulta">Consultar:</label>
-        <input onclick="consultar()" type="button" name = "consulta" id="consulta" value="consulta"><br><br>
+        <label for="consulta">Excluir Pergunta:</label>
+        <input onclick="deletar()" type="button" name = "deleta" id="deleta" value="deletar"><br><br>
 
     </form>
-
-    <div id="consultado">
-
-    </div>
  
 </body>
 
