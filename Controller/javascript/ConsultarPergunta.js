@@ -49,6 +49,7 @@ function metodoGET() {
     .catch(error => {
       consultaSucesso = false
       EscreverNaTela(consultaSucesso)
+      alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
       return console.log('error', error)
     });
 

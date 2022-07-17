@@ -40,6 +40,7 @@ function metodoGET(consultaSucesso) {
     .catch(error => {
       consultaSucesso = false
       EscreverNaTela(consultaSucesso)
+      alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
       return console.log('error', error)
     });
 
@@ -62,6 +63,7 @@ var id = document.getElementById("id").value
       return console.log(result);
     })
     .catch(error => {
+      alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
      return console.log('error', error);
     });
   }

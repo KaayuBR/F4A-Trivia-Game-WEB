@@ -83,7 +83,10 @@ var requestOptions = {
 fetch("http://localhost:8080/api/questao/adicionar", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  .catch(error => {
+    alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
+    return console.log('error', error);
+  });
 
 document.getElementById("adicionar-perguntas").reset()
 }

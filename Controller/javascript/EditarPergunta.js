@@ -49,6 +49,7 @@ function consultar(){
       .catch(error => {
         consultaSucesso = false
         EscreverNaTela(consultaSucesso)
+        alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
         return console.log('error', error)
       });
   
@@ -210,7 +211,7 @@ fetch("http://localhost:8080/api/questao/atualizar/"+id, requestOptions)
     return console.log(result)
   })
   .catch(error => {
-    alert("Houve um erro!")
+    alert("houve um erro! \n\nVerifique o status de servidor do banco de dados")
     return console.log('error', error)
   });
 }
